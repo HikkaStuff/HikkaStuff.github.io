@@ -5,6 +5,7 @@ echo -e "\033[2J\033[3;1f"
 eval "cat ~/Hikka/assets/download.txt"
 printf "\n\n\033[1;35mHikka is being installed... ✨\033[0m"
 
+printf "\r\033[K\033[0;32mPackages ready!\e[0m\n"
 echo -e "\033[0;96mInstalling Pillow...\033[0m"
 
 if eval "lscpu | grep Architecture" | grep -qE 'aarch64'; then
